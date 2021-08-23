@@ -7,10 +7,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/id/:id", mealController.getMealById);
-app.use("/", mealController.getAllMeals);
 app.use("/categories", mealController.getAllMealsCategories);
 app.use("/filter", mealController.getMealsByCategory);
+app.use("/id/:id", mealController.getMealById);
+app.use("/", mealController.getAllMeals);
 
 const PORT = process.env.PORT || 3001;
 
