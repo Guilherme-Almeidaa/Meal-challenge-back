@@ -2,7 +2,7 @@ const mealsService = require("../services/mealsService");
 
 const getAllMeals = (req, res) => {
   const { m } = req.query;
-  const meal = m;
+  const meal = m || "";
   try {
     return mealsService.getAllMeals(meal).then((response) => {
       res.status(200);
