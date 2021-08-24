@@ -9,7 +9,6 @@ const getAllMeals = (req, res) => {
       return res.json(response);
     });
   } catch (error) {
-    console.log(error.message);
     res.status(500);
     return res.json(error);
   }
@@ -23,7 +22,6 @@ const getMealById = (req, res) => {
       return res.json(response);
     });
   } catch (error) {
-    console.log(error.message);
     res.status(500);
     return res.json(error);
   }
@@ -36,7 +34,6 @@ const getAllMealsCategories = (_req, res) => {
       return res.json(response);
     });
   } catch (error) {
-    console.log(error.message);
     res.status(500);
     return res.json(error);
   }
@@ -51,7 +48,6 @@ const getMealsByCategory = (req, res) => {
       return res.json(response);
     });
   } catch (error) {
-    console.log(error.message);
     res.status(500);
     return res.json(error);
   }
